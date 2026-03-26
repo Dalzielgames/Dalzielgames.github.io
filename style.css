@@ -1,0 +1,96 @@
+/* Body + background */
+body {
+  background-image: url('eugh.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px; /* horizontal center */
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: monospace;
+  text-align: center; /* centers headings and content */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 50pt;
+  margin: 0 30px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-shadow: 0 0 15px #ffffff;
+}
+
+/* Headings */
+h1 { font-size: 55pt; color: white; }
+h2 { font-size: 43pt; color: white; }
+h3 { font-size: 36pt; color: white; }
+
+/* Paragraphs & middle content */
+p {
+  font-size: 36pt;
+  color: white;
+}
+
+.middle {
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.6;
+  text-align: center;
+  background-color: transparent;
+  font-size: 43pt;
+}
+
+/* Make all links inside the middle content white */
+.middle a {
+  color: white;
+  text-decoration: underline; /* optional: shows that it’s a link */
+  transition: color 0.3s ease;
+}
+
+.middle a:hover {
+  color: #f0f0f0; /* slightly brighter on hover for effect */
+}
+
+/* Counter box */
+.counter-box {
+  display: flex;
+  justify-content: center; /* centers counter horizontally */
+  margin: 50px auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.counter-box img {
+  width: 350px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-box img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px white;
+}
+
+/* Floating animation for counter */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
